@@ -30,7 +30,7 @@ const BanglesPage = () => {
                 ></i>
                 </div>
 
-                    <Link to={`/bangle/${item.id}`} >
+                    <Link to={`/bangles/${item.id}`} >
                     <img className='pageImg' src={item.image} alt="" />
                     </Link>
                     <div className="pageTitle">

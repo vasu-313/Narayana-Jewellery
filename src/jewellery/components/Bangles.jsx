@@ -23,7 +23,7 @@ const Bangles = () => {
                     ></i>
                     </div>
 
-                    <Link to={`/bangle/${item.id}`} >
+                    <Link to={`/bangles/${item.id}`} >
                     <img className='proImage' src={item.image} alt="bangles" />
                     </Link>
 

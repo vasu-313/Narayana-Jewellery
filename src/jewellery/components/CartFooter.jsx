@@ -1,24 +1,39 @@
 import React from 'react'
-import { banglesData } from '../data/bangles'
+import { useCart } from '../context/CartContext'
+import { Link } from 'react-router-dom';
 
 const CartFooter = () => {
-  return (
-    <div className='cartFooter' >
-    {
-        banglesData.map((item) => {
-            return(
-              <div className="cartFooter">
-              <div className="cartPrice">
-                  <h3>₹{item.price}</h3>
-              </div>
-              <div className="cartPlace">
-              <button className='place-order' >Place Order</button>
-              </div>
-              </div>
-            )
-        })
+  const { totalPrice } = useCart();
+
+  // Indian currency formatter
+  const formatIndianCurrency = (amount) => {
+    try {
+      return new Intl.NumberFormat('en-IN', {
+        style: 'currency',
+        currency: 'INR',
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      }).format(amount);
+    } catch (error) {
+      // Fallback for browsers that might not support en-IN
+      return `₹${amount.toLocaleString('en-IN', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      })}`;
     }
-</div>
+  };
+
+  return (
+    <div className='cartFooter'>
+      <div className="cartPrice">
+      <h3>Total Cost: {formatIndianCurrency(totalPrice)}</h3>
+      </div>
+      <Link to='/delivery' >
+      <div className="cartPlace">
+        <button className='place-order'>Place Order</button>
+      </div>
+      </Link>
+    </div>
   )
 }
 

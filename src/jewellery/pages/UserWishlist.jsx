@@ -15,7 +15,7 @@ const UserWishlist = () => {
   return (
     <>
     < Navbar/>
-        <div>
+        <div className='wishlist-section' >
         <h1 className='CartTitle' >Wishlist</h1>
     {wishlistItems.length === 0 ?
     (<p className='empty-cart' >Your WishList is Empty</p>):

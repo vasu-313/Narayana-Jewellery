@@ -82,8 +82,9 @@ const UserProfile = () => {
 
   return (
     <>
+    <Navbar />
       <div className="profile-section">
-        <Navbar />
+        
         <div className="display-profile">
           <div className="profile">
             <div className="user-img">

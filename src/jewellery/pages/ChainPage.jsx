@@ -28,7 +28,7 @@ const ChainPage = () => {
                     ></i>
                     </div>
 
-                    <Link to={`/chain/${item.id}`} >
+                    <Link to={`/chains/${item.id}`} >
                 <img className='pageImg' src={item.image} alt="" />
                     </Link>
                 <div className="pageTitle">

@@ -6,8 +6,10 @@ export const idolData = [ {
     "purity": "90.99",
     "weight": "25 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "3500"
+    "making": 1000,
+    "price": 3500,
+    "quantity": 1,
+    "category": "idol"
 }, {
     "id": "2",
     "product": "Silver Idol",
@@ -16,8 +18,9 @@ export const idolData = [ {
     "purity": "90.99",
     "weight": "30 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "4000"
+    "making": 1000,
+    "price": 4000,
+    "quantity": 1
 },{
     "id": "3",
     "product": "Silver Idol",
@@ -26,8 +29,9 @@ export const idolData = [ {
     "purity": "90.99",
     "weight": "22 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "3200"
+    "making": 1000,
+    "price": 3200,
+    "quantity": 1
 },{
     "id": "4",
     "product": "Silver Idol",
@@ -36,8 +40,9 @@ export const idolData = [ {
     "purity": "90.99",
     "weight": "32 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "4200"
+    "making": 1000,
+    "price": 4200,
+    "quantity": 1
 },{
     "id": "5",
     "product": "Silver Idol",
@@ -46,8 +51,9 @@ export const idolData = [ {
     "purity": "90.99",
     "weight": "28 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "3800"
+    "making": 1000,
+    "price": 3800,
+    "quantity": 1
 },{
     "id": "6",
     "product": "Silver Idol",
@@ -56,8 +62,9 @@ export const idolData = [ {
     "purity": "90.99",
     "weight": "40 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "5000"
+    "making": 1000,
+    "price": 5000,
+    "quantity": 1
 },{
     "id": "7",
     "product": "Silver Idol",
@@ -66,8 +73,9 @@ export const idolData = [ {
     "purity": "90.99",
     "weight": "30 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "4000"
+    "making": 1000,
+    "price": 4000,
+    "quantity": 1
 },{
     "id": "8",
     "product": "Silver Idol",
@@ -76,6 +84,7 @@ export const idolData = [ {
     "purity": "90.99",
     "weight": "33 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "4300"
+    "making": 1000,
+    "price": 4300,
+    "quantity": 1
 },]

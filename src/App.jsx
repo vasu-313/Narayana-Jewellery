@@ -24,12 +24,15 @@ import LoginPage from './jewellery/pages/LoginPage'
 import { AuthProvider } from './jewellery/context/AuthContext'
 import UserProfile from './jewellery/pages/UserProfile'
 import UserWishlist from './jewellery/pages/UserWishlist'
+import DeliveryAddress from './jewellery/pages/DeliveryAddress'
+import { WishlistProvider } from './jewellery/context/WishlistContext'
 
 const App = () => {
   return (
     <div>
       <AuthProvider>
-      <Routes>
+        <WishlistProvider>
+        <Routes>
         <Route path="/" element = { <LandingPage /> } />
         <Route path="/r" element = { <RingsPage /> } />
         <Route path="/b" element = { <BanglesPage /> } />
@@ -52,7 +55,9 @@ const App = () => {
         <Route path="/signup" element = { <SignupPage /> } />
         <Route path='/profile' element = { <UserProfile />} />
         <Route path='/wishlist' element = { <UserWishlist />} />
+        <Route path='/delivery' element = { <DeliveryAddress />} />
       </Routes>
+        </WishlistProvider>
       </AuthProvider>
     </div>
   )

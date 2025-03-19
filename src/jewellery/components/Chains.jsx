@@ -26,7 +26,7 @@ const Chains = () => {
                     ></i>
                     </div>
                     
-                    <Link to={`/chain/${item.id}`} >
+                    <Link to={`/chains/${item.id}`} >
                     <img className='proImage' src={item.image} alt="chains" />
                     </Link>
                     <div className="imgTitle">

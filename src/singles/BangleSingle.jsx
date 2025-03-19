@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Navbar from '../jewellery/components/Navbar'
 import { banglesData } from '../jewellery/data/bangles'
 import { useCart } from '../jewellery/context/CartContext'
@@ -8,7 +8,8 @@ import { useWishlist } from '../jewellery/context/WishlistContext'
 const BangleSingle = () => {
     const { id } = useParams()
     const { toggleWishlistItem, wishlistItems } = useWishlist()
-    const { addToCart } = useCart()
+    const { addToCart, cartItems } = useCart()
+    const navigate = useNavigate();
 
     // 1. Check ID type in your data first
     const product = banglesData.find(item => 
@@ -27,6 +28,12 @@ const BangleSingle = () => {
         wishItem.id.toString() === id && 
         wishItem.category === 'bangles'
     )
+
+    // Combined handler for Buy Now
+    const handleBuyNow = () => {
+      // cartItems(product);
+      navigate('/delivery', { state: { immediateProduct: product } });
+  }
 
     return (
         <>
@@ -63,7 +70,9 @@ const BangleSingle = () => {
                   <h2>TOTAL COST: ₹{product.price}</h2>
                 </div>
                 <div className="buy">
-                  <button>Buy Now</button>
+                  <button onClick={handleBuyNow} >
+                    Buy Now
+                    </button>
                 <button onClick={()=>addToCart(product)} >Add To Cart</button>
                 </div>
               </div>

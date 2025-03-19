@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import { useAuth } from '../context/AuthContext'
-import { auth } from './Firebase';
+import MobileNavbar from './MobileNavbar'
 
 // Capitalize first letter utility function
 // const capitalizeFirstLetter = (str) => {
@@ -21,10 +21,11 @@ const Navbar = () => {
     
         <div className="navSection">
         <div className="title">
+            <h2><span className='letter' >N</span></h2>
             <h2>Narayana Jewellery</h2>
         </div>
         <div className="search">
-            <input type="text" placeholder='Search For Jewellery' />
+            <input className='search-input' type="text" placeholder='Search For Jewellery' />
             <i class='bx bx-search' ></i>
         </div>
         <div className="user">
@@ -48,7 +49,6 @@ const Navbar = () => {
             </h4>
             </div> 
             </Link>
-            
             
         </div>
     </div>
@@ -88,6 +88,7 @@ const Navbar = () => {
             </Link>
         </ul>
     </div>
+    <MobileNavbar />
     </>
   )
 }

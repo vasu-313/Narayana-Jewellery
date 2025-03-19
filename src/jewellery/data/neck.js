@@ -6,8 +6,10 @@ export const neckData = [ {
     "purity": "91.6(22k)",
     "weight": "10 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "75,250"
+    "making": 1000,
+    "price": 75250,
+    "quantity": 1,
+    "category": "neck"
 }, {
     "id": "2",
     "product": "GOld Ring",
@@ -16,8 +18,9 @@ export const neckData = [ {
     "purity": "91.6(22k)",
     "weight": "9 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "67,825"
+    "making": 1000,
+    "price": 67825,
+    "quantity": 1
 },{
     "id": "3",
     "product": "GOld Ring",
@@ -26,8 +29,9 @@ export const neckData = [ {
     "purity": "91.6(22k)",
     "weight": "6 grams",
     "wastage": "10%",
-    "making": "500",
-    "price": "45,050"
+    "making": 500,
+    "price": 45050,
+    "quantity": 1
 },{
     "id": "4",
     "product": "GOld Ring",
@@ -36,8 +40,9 @@ export const neckData = [ {
     "purity": "91.6(22k)",
     "weight": "5 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "38,125"
+    "making": 1000,
+    "price": 38125,
+    "quantity": 1
 },{
     "id": "5",
     "product": "GOld Ring",
@@ -46,8 +51,9 @@ export const neckData = [ {
     "purity": "90.99",
     "weight": "7 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "53,000"
+    "making": 1000,
+    "price": 53000,
+    "quantity": 1
 },{
     "id": "6",
     "product": "GOld Ring",
@@ -56,8 +62,9 @@ export const neckData = [ {
     "purity": "91.6(22k)",
     "weight": "4 grams",
     "wastage": "10%",
-    "making": "500",
-    "price": "30,200"
+    "making": 500,
+    "price": 30200,
+    "quantity": 1
 },{
     "id": "7",
     "product": "GOld Ring",
@@ -66,8 +73,9 @@ export const neckData = [ {
     "purity": "91.6(22k)",
     "weight": "3.5 grams",
     "wastage": "10%",
-    "making": "500",
-    "price": "26,500"
+    "making": 500,
+    "price": 26500,
+    "quantity": 1
 },{
     "id": "8",
     "product": "GOld Bracelet",
@@ -76,8 +84,9 @@ export const neckData = [ {
     "purity": "91.6(22k)",
     "weight": "6 grams",
     "wastage": "10%",
-    "making": "1000",
-    "price": "45,500"
+    "making": 1000,
+    "price": 45500,
+    "quantity": 1
 },{
     "id": "9",
     "product": "GOld Ring",
@@ -86,8 +95,9 @@ export const neckData = [ {
     "purity": "91.6(22k)",
     "weight": "5 grams",
     "wastage": "10%",
-    "making": "500",
-    "price": "37,650"
+    "making": 500,
+    "price": 37650,
+    "quantity": 1
 },{
     "id": "10",
     "product": "GOld neck",
@@ -96,6 +106,7 @@ export const neckData = [ {
     "purity": "91.6(22k)",
     "weight": "7 grams",
     "wastage": "10%",
-    "making cost": "1000",
-    "price": "53,000"
+    "making": 1000,
+    "price": 53000,
+    "quantity": 1
 },]

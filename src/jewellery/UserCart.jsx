@@ -2,15 +2,16 @@ import React from 'react'
 import { useCart } from './context/CartContext'
 import Navbar from './components/Navbar'
 import CartFooter from './components/CartFooter'
+import { Link } from 'react-router-dom'
 
 const UserCart = () => {
 
-    const {cartItems, addToCart, removeFromCart} = useCart()
+    const {cartItems,  removeFromCart} = useCart()
 
   return (
     <>
     <Navbar />
-        <div>
+        <div className='userCart-section' >
         <h1 className="CartTitle" >My Cart</h1>
     {cartItems.length === 0 ?
     (<p className='empty-cart' >Your Cart is Empty</p>):   
@@ -18,9 +19,11 @@ const UserCart = () => {
         {cartItems.map((item)=>{
             return(
                 <div className="cart-section">
+                    <Link  to={`/${item.category}/${item.id}`} >
                     <div className="cart-img">
                         <img className='cart-img' src={item.image} alt="" />
                     </div>
+                    </Link>
                     <div className="cart-details">
                         <div className="main-cart-title">
                         <h2>{item.title}</h2>
